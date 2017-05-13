@@ -1,7 +1,11 @@
-const Button = React.createClass({
+const ShoppingList = React.createClass({
   render() {
-    return React.createElement('button', {}, 'Click me!');
+    return React.createElement('ul', {}, [
+      React.createElement('li', {}, 'Bananas'),
+      React.createElement('li', {}, 'Vanilla ice cream'),
+      React.createElement('li', {}, 'Chocolate'),
+    ]);
   }
 });
 
-ReactDOM.render(Button, document.getElementById('asdf'));
+ReactDOM.render(ShoppingList, document.getElementById('main'));
